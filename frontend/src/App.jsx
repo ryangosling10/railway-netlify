@@ -10,11 +10,12 @@ export default function App() {
     if (!url) return;
     setLoading(true);
     try {
-      const res = await fetch('/api/download', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ url, platform })
-      });
+const res = await fetch('/api/download', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ url, platform })
+});
+
       if (!res.ok) throw new Error('Download failed');
       const blob = await res.blob();
       const disp = res.headers.get('Content-Disposition');
