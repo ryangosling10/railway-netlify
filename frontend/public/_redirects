@@ -1,1 +1,1 @@
-/api/* https://your-railway-backend-url.up.railway.app/api/:splat 200
+/api/* https://rabbitdev.up.railway.app/:splat 200
