@@ -1,7 +1,6 @@
 {
   "name": "rabbitdownloader-backend",
   "version": "1.0.0",
-  "type": "module",
   "license": "MIT",
   "dependencies": {
     "express": "^4.18.2",
